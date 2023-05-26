@@ -1,5 +1,3 @@
-
-
 import './App.css'
 import Counter from './component/Counter';
 import Title from './component/Title';
@@ -13,23 +11,23 @@ function App() {
   const horas = 2
   const minutos = 3
   const segundos = 40
-    // console.log(notes)
+  // console.log(notes)
   const [day, hour, minute, second] =useCountdown("Jan 1, 2024 00:00:00")
-    return (
+  return (
 
-    <div className="App">
-      <div className="container">
-        <Title title={counterTitle} />
-      <div className="countdown-container">
-        <Counter title="Dias" number={day} />
-        <Counter title="Horas" number={hour} />
-        <Counter title="Minutos" number={minute} />
-        <Counter title="Segundos" number={second} />
-      </div>
-      </div>
-    
+  <div className="App">
+    <div className="container">
+    <Title title={counterTitle} />
+    <div className="countdown-container">
+    <Counter title="Dias" number={day} />
+    <Counter title="Horas" number={hour} />
+    <Counter title="Minutos" number={minute} />
+    <Counter title="Segundos" number={second} />
     </div>
-      ); 
+    </div>
+  
+  </div>
+    ); 
 }
 
 export default App
